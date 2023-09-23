@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahuah</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+<div class="container">
+    <nav>
+        <ul class="bar">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="has-dropdown">
+                <a href="#">About</a>
+                <ul class="dropdown">
+                    <li><a href="#">The Company</a></li>
+                    <li><a href="#">The Team</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="#">Contact</a>
+                <ul class="dropdown">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </nav>
+</div>
+<br>
+    <div class="images">
+        <img onclick="openModal(0)" id="image0" />
+        <img onclick="openModal(1)" id="image1" />
+        <img onclick="openModal(2)" id="image2" />
+        <img onclick="openModal(3)" id="image3" />
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <button onclick="closeModal()" class="close-btn">
+            Close
+        </button>
+
+    <div class="image-preview">
+        <img id="preview-image" />
+    </div>
+    <div class="control-btns">
+        <button onclick="control(-1)" class="control-left">
+            &lt;
+        </button>
+        <button onclick="control(1)" class="control-left">
+            &gt;
+        </button>
+    </div>
+    <div id="modal-images-block" class="lightbox__images">
+        <img onclick="openModal(0)" id="l-image0" />
+        <img onclick="openModal(1)" id="l-image1" />
+        <img onclick="openModal(2)" id="l-image2" />
+        <img onclick="openModal(3)" id="l-image3" />
+    </div>
+    </div>
+   
+    <div class="carousel">
+    <!-- Photo 1 -->
+    <div class="card">
+        <img src="./img/1.jpeg" alt="New York" class="" />
+        <p>1/4</p>
+    </div>
+    <!-- Photo 2 -->
+    <div class="card hidden-card">
+        <img src="./assets/quotes.jpeg" alt="New York" class="" />
+        <p>2/4</p>
+    </div>
+    <!-- Photo 3 -->
+    <div class="card hidden-card">
+        <img src="./assets/light.jpg" alt="New York" class="" />
+        <p>3/4</p>
+    </div>
+    <!-- Photo 4 -->
+    <div class="card hidden-card">
+        <img src="./assets/quotes.jpeg" alt="New York" class="" />
+        <p>4/4</p>
+    </div>
+    <div class="navigation">
+        <button class="prev nav-btn">←</button>
+        <button class="next nav-btn">→</button>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
